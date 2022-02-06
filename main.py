@@ -18,14 +18,14 @@ def main():
     background.fill(white)#填充黄色颜色
 
     # 加入文字
-    font = pygame.font.Font(None,88)
-    text = font.render('Start the game ',1,black)
+    font = pygame.font.Font('./font/PingFang.ttc',80)
+    text = font.render('开始游戏 ',1,black)
     textpos = text.get_rect()
-    textpos.center = (750 / 2, 1200 / 2)  # 居中的坐标
+    textpos.center = (375, 650)  # 居中的坐标
 
-    text_end = font.render('Exit the game',1,black)
+    text_end = font.render('结束游戏',1,black)
     textpos_text_end = text_end.get_rect()
-    textpos_text_end.center = (750 / 2, 1200 / 2+90)  # 居中的坐标+90像素
+    textpos_text_end.center = (360, 650+80)  # 居中的坐标+90像素
 
 
     background.blit(text,textpos)
